@@ -55,10 +55,7 @@ namespace DesafioFundamentos.Models
 				Console.WriteLine($"O veículo '{placa}' foi removido e o preço total foi de: R$ {valorTotal}");
 				veiculos.Remove(placa);
 				}
-			else
-				{
-				Console.WriteLine("Desculpe, esse veículo não está estacionado aqui. Confira se digitou a placa corretamente");
-				}
+			else Console.WriteLine("Desculpe, esse veículo não está estacionado aqui. Confira se digitou a placa corretamente");
 			}
 
 		public void ListarVeiculos()
@@ -72,10 +69,7 @@ namespace DesafioFundamentos.Models
 					Console.Write($"{item}\n");
 					}
 				}
-			else
-				{
-				Console.WriteLine("Não há veículos estacionados.");
-				}
+			else Console.WriteLine("Não há veículos estacionados.");
 			}
 
 		public int ObterHorasEstacionado()
@@ -87,10 +81,7 @@ namespace DesafioFundamentos.Models
 					{
 					return entradaHoras;
 					}
-				else
-					{
-					Console.WriteLine("Hora inválida, digite apenas números inteiros.");
-					}
+				else Console.WriteLine("Hora inválida, digite apenas números inteiros.");
 				}
 			}
 		}
