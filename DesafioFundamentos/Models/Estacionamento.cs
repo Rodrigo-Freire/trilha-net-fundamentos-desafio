@@ -78,20 +78,20 @@ namespace DesafioFundamentos.Models
 				}
 			}
 
-public int ObterHorasEstacionado()
-{
-    while (true)
-    {
-        Console.WriteLine("Digite a quantidade de horas que o veículo permaneceu estacionado:");
-        if (int.TryParse(Console.ReadLine(), out int entradaHoras))
-        {
-            return entradaHoras;
-        }
-        else
-        {
-            Console.WriteLine("Hora inválida, digite apenas números inteiros.");
-        }
-    }
-}
+		public int ObterHorasEstacionado()
+			{
+			while (true)
+				{
+				Console.WriteLine("Digite a quantidade de horas que o veículo permaneceu estacionado:");
+				if (int.TryParse(Console.ReadLine(), out int entradaHoras))
+					{
+					return entradaHoras;
+					}
+				else
+					{
+					Console.WriteLine("Hora inválida, digite apenas números inteiros.");
+					}
+				}
+			}
 		}
 	}
